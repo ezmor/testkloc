@@ -1,0 +1,156 @@
+/* Reset margins and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Typography */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header a:hover {
+    color: #ccc;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+/* Main container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+/* Table */
+table {
+    width: 100%;
+    margin-bottom: 1rem;
+    background-color: #fff;
+}
+
+table th,
+table td {
+    padding: 0.75rem;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+}
+
+table thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #dee2e6;
+}
+
+table tbody + tbody {
+    border-top: 2px solid #dee2e6;
+}
+
+/* Responsive table */
+@media (max-width: 767.98px) {
+.table-responsive {
+display: block;
+width: 100%;
+overflow-x: auto;
+-webkit-overflow-scrolling: touch;
+}
+}
+
+/* Login page */
+.login-container {
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+}
+
+.login-form {
+width: 100%;
+max-width: 400px;
+padding: 2rem;
+background-color: #fff;
+border: 1px solid #ccc;
+border-radius: 5px;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.login-form h2 {
+font-size: 1.5rem;
+margin-bottom: 1.5rem;
+}
+
+.login-form input {
+display: block;
+width: 100%;
+padding: 0.5rem;
+margin-bottom: 1rem;
+font-size: 1rem;
+line-height: 1.5;
+color: #495057;
+background-color: #fff;
+border: 1px solid #ced4da;
+border-radius: 0.25rem;
+}
+
+.login-form button {
+display: block;
+width: 100%;
+padding: 0.5rem;
+font-size: 1rem;
+line-height: 1.5;
+color: #fff;
+background-color: #007bff;
+border: 1px solid #007bff;
+border-radius: 0.25rem;
+cursor: pointer;
+}
+
+.login-form button:hover {
+background-color: #0056b3;
+border-color: #0056b3;
+}
+
+.login-form .form-group {
+margin-bottom: 1rem;
+}
+
+/* Footer */
+footer {
+background-color: #f8f9fa;
+padding: 1rem;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+footer p {
+margin: 0;
+}
+
+/* Utility classes */
+.mb-4 {
+margin-bottom: 1.5rem;
+}
+
+.mt-5 {
+margin-top: 3rem;
+}
